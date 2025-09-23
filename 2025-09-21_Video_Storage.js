@@ -69,7 +69,7 @@ function numberOfVideos(videoSize, videoUnit, driveSize, driveUnit) {
 }
 
 console.log(numberOfVideos(500, "MB", 100, "GB")) // should return 200.
-console.log(numberOfVideos(2000, "B", 1, "TB")) // should return 500000000.
+console.log(numberOfVideos(1, "TB", 10, "TB")) // should return "Invalid video unit".
 console.log(numberOfVideos(2000, "MB", 100000, "MB")) // should return "Invalid drive unit".
 console.log(numberOfVideos(500000, "KB", 2, "TB")) // should return 4000.
 console.log(numberOfVideos(1.5, "GB", 2.2, "TB")) // should return 1466.
