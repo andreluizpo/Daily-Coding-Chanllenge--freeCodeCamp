@@ -19,7 +19,7 @@ function adjustThermostat(currentF, targetC) {
             1
         )} degrees Fahrenheit`;
     if (currentF > targetTempF)
-        return `Cold: ${(currentF - targetTempF).toFixed(
+        return `Cool: ${(currentF - targetTempF).toFixed(
             1
         )} degrees Fahrenheit`;
     return "Hold";
